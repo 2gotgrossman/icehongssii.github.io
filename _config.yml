@@ -1,23 +1,27 @@
 permalink:           pretty
 
 # Setup
-title:               PERSIMMON
-tagline:             '홍씨'
-description:         "icehongssi's dev office"
+title:               '홍씨'
+tagline:             ''
+description:         "icehongssii(차가워홍씨)'s office'"
 url:                 http://icehongssii.github.io/
-baseurl:             'http://icehongssii.github.io/'
+baseurl:             ''
 
 gems:
   - jekyll-paginate
   - jekyll-seo-tag
   - jemoji
 
+# paginate
+paginate: 20
+paginate_path: "/blog/page:num/"
+
 # time ago
 jekyll_timeago:
   depth: 1
 
 # About/contact
-author:              icehongssii
+author:
   name:              icehongssii
   url:               http://github.com/icehongssii
   email:             icehongssii@gmail.com
