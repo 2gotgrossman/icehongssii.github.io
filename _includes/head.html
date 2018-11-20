@@ -1,0 +1,43 @@
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!DOCTYPE html>
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <!-- naver ownership verification -->
+  <meta name="naver-site-verification" content="fdcfc6ffe6d16095fbd14078f1f8726df5afee5d"/>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content" />
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/index.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="{{ my_site.title }} &middot; ATOM" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="{{ my_site.title }} &middot; RSS" href="/feed.xml" />
+
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    })
+  </script>
+  {% seo %}
+</head>
